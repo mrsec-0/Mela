@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How it Works - Mela</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+                <div class="nav-container">
+                    <a href="FIRST.HTML" class="logo-link">
+                        <div class="logo">
+                           <svg class="logo-dot" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M12 3L2 12h3v8h6v-5h2v5h6v-8h3L12 3z" fill="#16120e"/>
+                           </svg>
+                        </div>
+                        <span class="logo-text">MELA</span>
+                    </a>
+                      <nav class="nav-menu">
+                          <span class="location-text">Hawassa</span>
+                          <a href="how-it-works.html" class="nav-link active-link">How it Works</a>
+                          <a href="dashboard.html" class="nav-link">Dashboard</a>
+                          <a href="#" class="nav-link" id="login-open-btn">Login</a>
+                          <a href="#" class="cta-button" id="list-service-open-btn">List your services</a>
+                     </nav>
+                </div>
+            </header>
+
+                          <!-- How it works -->
+            <section class="how-it-works" id="how-it-works">
+                <h2 class="section-title">How Mela works</h2>
+                <p class="how-it-works-intro">Find trusted help in Hawassa — for everyday home services and special events. Two different flows, one simple marketplace.</p>
+
+                <div class="tracks-grid">
+                    <div class="track-card">
+                        <h3 class="track-title">Home Services</h3>
+                        <p class="track-subtitle">Same-day help for everyday breakdowns.</p>
+                        <ol class="track-steps">
+                            <li class="track-step">
+                                <span class="track-step-number">1</span>
+                                <div>
+                                    <h4 class="track-step-title">Browse or search by category</h4>
+                                    <p class="track-step-text">Plumbing, electrical, cleaning and more — find what you need by neighbourhood or service type.</p>
+                                </div>
+                            </li>
+                            <li class="track-step">
+                                <span class="track-step-number">2</span>
+                                <div>
+                                    <h4 class="track-step-title">Check who's available nearby</h4>
+                                    <p class="track-step-text">See ratings, reviews and availability status at a glance. Filter by your neighbourhood.</p>
+                                </div>
+                            </li>
+                            <li class="track-step">
+                                <span class="track-step-number">3</span>
+                                <div>
+                                    <h4 class="track-step-title">Call or WhatsApp directly</h4>
+                                    <p class="track-step-text">No booking fee, no middleman. Reach the provider straight away and work out the details.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="track-card">
+                        <h3 class="track-title">Events &amp; Entertainment</h3>
+                        <p class="track-subtitle">Weddings, graduations, celebrations — booked by date.</p>
+                        <ol class="track-steps">
+                            <li class="track-step">
+                                <span class="track-step-number">1</span>
+                                <div>
+                                    <h4 class="track-step-title">Browse by category</h4>
+                                    <p class="track-step-text">Photographers, bands, MCs, decorators and caterers across Hawassa — city-wide, not neighbourhood-limited.</p>
+                                </div>
+                            </li>
+                            <li class="track-step">
+                                <span class="track-step-number">2</span>
+                                <div>
+                                    <h4 class="track-step-title">Check portfolios and pricing</h4>
+                                    <p class="track-step-text">View sample work, compare package options and see what each team offers before you reach out.</p>
+                                </div>
+                            </li>
+                            <li class="track-step">
+                                <span class="track-step-number">3</span>
+                                <div>
+                                    <h4 class="track-step-title">Send a date inquiry</h4>
+                                    <p class="track-step-text">Pick your event date, add a short message. The provider confirms or declines — you'll hear back by phone or WhatsApp.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="track-card">
+                        <h3 class="track-title">For providers</h3>
+                        <p class="track-subtitle">Join Mela and let Hawassa find you.</p>
+                        <ol class="track-steps">
+                            <li class="track-step">
+                                <span class="track-step-number">1</span>
+                                <div>
+                                    <h4 class="track-step-title">Verify your phone</h4>
+                                    <p class="track-step-text">Quick SMS verification — no email or password needed.</p>
+                                </div>
+                            </li>
+                            <li class="track-step">
+                                <span class="track-step-number">2</span>
+                                <div>
+                                    <h4 class="track-step-title">Set up your profile</h4>
+                                    <p class="track-step-text">Add your bio, neighbourhood, rate or package pricing, and a photo. Events teams can upload a portfolio.</p>
+                                </div>
+                            </li>
+                            <li class="track-step">
+                                <span class="track-step-number">3</span>
+                                <div>
+                                    <h4 class="track-step-title">Start appearing in search</h4>
+                                    <p class="track-step-text">Once approved, customers can find your profile, contact you directly and leave reviews.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="how-it-works-footer">
+                    <p class="free-note">Free to join — no listing fees or commissions for now.</p>
+                    <div class="how-it-works-ctas">
+                        <a href="#" class="cta-button" id="how-it-works-list-service-btn">List your service</a>
+                        <a href="FIRST.HTML#workers-grid" class="cta-secondary-button">Browse as a customer</a>
+                    </div>
+                </div>
+            </section>
+
+        <!-- Login / Sign up modal -->
+        <div class="modal-overlay" id="auth-modal-overlay">
+            <div class="modal-box">
+                <button class="modal-close-btn" id="modal-close-btn">&times;</button>
+
+                <div class="modal-tabs">
+                    <button class="modal-tab active" id="tab-login-btn" data-tab="login">Login</button>
+                    <button class="modal-tab" id="tab-signup-btn" data-tab="signup">Sign Up</button>
+                </div>
+
+                <form class="modal-form" id="login-form">
+                    <div class="form-row">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="submit-review-btn">Log In</button>
+                    <p class="modal-error" id="login-error"></p>
+                </form>
+
+                <form class="modal-form hidden" id="signup-form">
+                    <div class="form-row">
+                        <label for="signup-name">Full name</label>
+                        <input type="text" id="signup-name" placeholder="e.g. Sara Yusuf" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" placeholder="At least 6 characters" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="signup-role">I am a...</label>
+                        <select id="signup-role" required>
+                            <option value="customer">Customer looking for help</option>
+                            <option value="worker">Worker offering a service</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-review-btn">Create Account</button>
+                    <p class="modal-error" id="signup-error"></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- List your services modal -->
+        <div class="modal-overlay" id="list-service-modal-overlay">
+            <div class="modal-box">
+                <button class="modal-close-btn" id="list-service-close-btn">&times;</button>
+                <h3 class="modal-title">List Your Services</h3>
+                <p class="modal-subtitle">Join Mela and start getting job requests from Hawassa households.</p>
+
+                <form class="modal-form" id="list-service-form">
+                    <div class="form-row">
+                        <label for="worker-form-name">Full name</label>
+                        <input type="text" id="worker-form-name" placeholder="e.g. Biruk Tadesse" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="worker-form-phone">Phone number</label>
+                        <input type="tel" id="worker-form-phone" placeholder="09xx xxx xxx" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="worker-form-category">Service category</label>
+                        <select id="worker-form-category" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="plumbers">Plumber</option>
+                            <option value="electricians">Electrician</option>
+                            <option value="cleaners">Cleaner</option>
+                            <option value="photographers">Photographer</option>
+                            <option value="event-teams">Event Team</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="worker-form-experience">Years of experience</label>
+                        <input type="number" id="worker-form-experience" min="0" max="60" placeholder="e.g. 5" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="worker-form-price">Price per job (ETB)</label>
+                        <input type="number" id="worker-form-price" min="0" placeholder="e.g. 400" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="worker-form-bio">Short bio</label>
+                        <textarea id="worker-form-bio" rows="3" placeholder="Tell customers what you do best" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-review-btn">Submit Listing</button>
+                    <p class="modal-error" id="list-service-error"></p>
+                </form>
+            </div>
+        </div>
+
+<script src="script.js"></script>
+</body>
+</html>

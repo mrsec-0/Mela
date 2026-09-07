@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your Mela dashboard — manage your account and reviews.">
+    <title>Dashboard - Mela</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <div>
+            <header class="main-header">
+                <div class="nav-container">
+                    <a href="FIRST.HTML" class="logo-link">
+                        <div class="logo">
+                           <svg class="logo-dot" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M12 3L2 12h3v8h6v-5h2v5h6v-8h3L12 3z" fill="#16120e"/>
+                           </svg>
+                        </div>
+                        <span class="logo-text">MELA</span>
+                    </a>
+                      <nav class="nav-menu">
+                          <span class="location-text">Hawassa</span>
+                          <a href="how-it-works.html" class="nav-link">How it Works</a>
+                          <a href="dashboard.html" class="nav-link active-link">Dashboard</a>
+                          <a href="#" class="nav-link" id="login-open-btn">Login</a>
+                          <a href="FIRST.HTML" class="cta-button">List your services</a>
+                     </nav>
+                </div>
+            </header>
+
+            <!-- Dashboard content -->
+            <section class="dashboard-section">
+
+                <!-- Shown when nobody is logged in -->
+                <div class="dashboard-guard" id="dashboard-guard">
+                    <h2 class="section-title">You're not logged in</h2>
+                    <p class="dashboard-guard-text">Log in or create an account to see your dashboard.</p>
+                    <button class="submit-review-btn dashboard-login-btn" id="dashboard-login-btn">Login / Sign Up</button>
+                </div>
+
+                <!-- Shown when logged in -->
+                <div class="dashboard-content hidden" id="dashboard-content">
+                    <div class="dashboard-welcome">
+                        <h2 class="section-title" id="dashboard-welcome-text">Welcome back</h2>
+                        <p class="dashboard-role" id="dashboard-role-badge"></p>
+                    </div>
+
+                    <div class="dashboard-grid">
+                        <div class="dashboard-card">
+                            <h3 class="dashboard-card-title">Account</h3>
+                            <div class="account-row">
+                                <span class="account-label">Name</span>
+                                <span class="account-value" id="account-name"></span>
+                            </div>
+                            <div class="account-row">
+                                <span class="account-label">Email</span>
+                                <span class="account-value" id="account-email"></span>
+                            </div>
+                            <div class="account-row">
+                                <span class="account-label">Account type</span>
+                                <span class="account-value" id="account-role"></span>
+                            </div>
+                            <button class="cta-secondary-button dashboard-logout-btn" id="dashboard-logout-btn">Log Out</button>
+                        </div>
+
+                        <div class="dashboard-card dashboard-card-wide">
+                            <h3 class="dashboard-card-title">My Orders</h3>
+                            <div class="orders-list" id="my-orders-list"></div>
+                        </div>
+
+                        <div class="dashboard-card dashboard-card-wide">
+                            <h3 class="dashboard-card-title">Your Reviews</h3>
+                            <div class="reviews-list" id="my-reviews-list"></div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-quick-links">
+                        <a href="FIRST.HTML#workers-grid" class="cta-secondary-button">Browse workers</a>
+                        <a href="FIRST.HTML" class="cta-secondary-button" id="dashboard-list-service-link">List your services</a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Login / Sign up modal -->
+        <div class="modal-overlay" id="auth-modal-overlay">
+            <div class="modal-box">
+                <button class="modal-close-btn" id="modal-close-btn">&times;</button>
+
+                <div class="modal-tabs">
+                    <button class="modal-tab active" id="tab-login-btn" data-tab="login">Login</button>
+                    <button class="modal-tab" id="tab-signup-btn" data-tab="signup">Sign Up</button>
+                </div>
+
+                <form class="modal-form" id="login-form">
+                    <div class="form-row">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="submit-review-btn">Log In</button>
+                    <p class="modal-error" id="login-error"></p>
+                </form>
+
+                <form class="modal-form hidden" id="signup-form">
+                    <div class="form-row">
+                        <label for="signup-name">Full name</label>
+                        <input type="text" id="signup-name" placeholder="e.g. Sara Yusuf" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" placeholder="At least 6 characters" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="signup-role">I am a...</label>
+                        <select id="signup-role" required>
+                            <option value="customer">Customer looking for help</option>
+                            <option value="worker">Worker offering a service</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-review-btn">Create Account</button>
+                    <p class="modal-error" id="signup-error"></p>
+                </form>
+            </div>
+        </div>
+
+<script src="script.js"></script>
+<script src="dashboard.js"></script>
+</body>
+</html>
